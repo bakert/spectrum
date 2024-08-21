@@ -119,7 +119,7 @@ impl Color {
             Space::Oklch
         } else if css_string.starts_with("#") {
             Space::Hex
-        } else if let Ok(_) = parse_color_keyword::<CssParserColor>(css_string) {
+        } else if parse_color_keyword::<CssParserColor>(css_string).is_ok() {
             Space::CssName
         } else {
             return Err("Unknown color space");
