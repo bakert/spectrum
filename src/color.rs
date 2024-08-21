@@ -1,5 +1,5 @@
 use cssparser_color::{parse_color_keyword, Color as CssParserColor};
-use palette::{Srgb, Hsl, Lab, Lch, Oklab, Oklch, FromColor};
+use palette::{FromColor, Hsl, Lab, Lch, Oklab, Oklch, Srgb};
 
 #[derive(Debug, Clone)]
 enum Space {
@@ -22,7 +22,12 @@ pub(crate) struct Color {
 }
 
 impl Color {
-    fn new(color_space: Space, color_value: Srgb<f32>, alpha: f32, original_representation: String) -> Self {
+    fn new(
+        color_space: Space,
+        color_value: Srgb<f32>,
+        alpha: f32,
+        original_representation: String,
+    ) -> Self {
         Color {
             color_space,
             color_value,
@@ -159,10 +164,7 @@ fn convert_to_css_string(input: &str) -> String {
     if color_space == "css" {
         return components[1].to_string(); // BAKERT maybe invalid if more than 2 parts?
     }
-    let components: Vec<String> = components
-        .iter()
-        .map(|s| s.replace("pct", "%"))
-        .collect();
+    let components: Vec<String> = components.iter().map(|s| s.replace("pct", "%")).collect();
 
     let values = if components.len() == 5 {
         let main_values = components[1..4].join(" ");
@@ -242,8 +244,16 @@ mod tests {
                 Err(e) => panic!("Failed to parse color {}: {}", representation, e),
             };
             println!("{}", representation);
-            assert_eq!(expected, actual.color_value, "Color values do not match: {:?} != {:?}", expected, actual.color_value);
-            assert_eq!(1.0, actual.alpha, "Alpha values do not match: {} != {}", 1.0, actual.alpha);
+            assert_eq!(
+                expected, actual.color_value,
+                "Color values do not match: {:?} != {:?}",
+                expected, actual.color_value
+            );
+            assert_eq!(
+                1.0, actual.alpha,
+                "Alpha values do not match: {} != {}",
+                1.0, actual.alpha
+            );
         }
 
         // let bad_representations = vec![

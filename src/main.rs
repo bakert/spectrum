@@ -1,9 +1,4 @@
-use axum::{
-    extract::Path,
-    response::Html,
-    routing::{get},
-    Router,
-};
+use axum::{extract::Path, response::Html, routing::get, Router};
 
 mod color;
 
