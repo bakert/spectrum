@@ -1,0 +1,13 @@
+[package]
+name = "spectrum"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7"
+cssparser = "0.33" # cssparser-color seems to blow up with 0.34, can maybe remove this as not explicitly used now?
+cssparser-color = "0.1"
+palette = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tracing-subscriber = "0.3"

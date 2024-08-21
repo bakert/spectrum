@@ -1,0 +1,12 @@
+- Copy stuff from old TODO
+- "svg" as an alias for "css" because that's where those color names originate.
+- Does palette have all CSS4 colors? Send a PR?
+
+[dev]
+- Linter
+- Formatter
+- Unit tests
+- IDE format on save
+- pre-commit?
+- Organize imports automatically
+- cargo watch --clear -x run should be in a file somewhere not just in my command history

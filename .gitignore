@@ -1,0 +1,8 @@
+# rust
+/target
+
+# MacOS
+.DS_Store
+
+# RustRover
+.idea/
