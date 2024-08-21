@@ -1,8 +1,61 @@
+- All the known names for the color.
+    - Pantone.
+    - CSS.
+    - ChatGPT.
+- https://github.com/color-js/color.js
+- ChatGPT's interpretation of the color.
+- Images featuring that color.
+- Designs featuring that color.
+- All the representations of the color.
+    - https://en.wikipedia.org/wiki/List_of_color_spaces_and_their_uses
+    - RGB
+    - RGB hex
+    - CSS named colors
+    - CMY
+    - CMYK
+    - HLS
+    - HSV
+    - CIELAB
+    - CIELCh
+    - CIELUV
+    - Hunter Lab
+    - xyz
+    - yxy
+    - Grayscale (?)
+    - Spectral (?! Should this by our canonical reprsentation?)
+   	- YIQ: Used in NTSC television broadcasting.
+	- YDbDr: Used in the SECAM television system.
+	- YPbPr: Component video color space used in video electronics.
+	- YCbCr: Used in digital video and photography.
+	- CIE Luv: Another color space defined by the CIE in 1976.
+	- CIE xyY: A chromaticity diagram that represents colors in a more perceptually uniform way.
+	- Munsell Color System: A color space that specifies colors based on hue, value (lightness), and chroma (color purity).
+	- HCL (Hue, Chroma, Luminance): Similar to HSL but designed to be more perceptually uniform.
+	- HSLuv and HSVuv: Perceptually uniform versions of HSL and HSV.
+	- Adobe RGB: A color space that encompasses more colors than sRGB, used in photography and printing.
+	- ProPhoto RGB: A color space used in professional photography, offering an even wider gamut than Adobe RGB.
+	- Display P3: A color space used in Apple’s Retina displays, supporting a wider gamut than sRGB.
+	- Pantone name/code
+- Color blindness safety.
+- Complimentary colors.
+    - Complementary
+    - Monochromatic
+    - Analagous
+    - Triadic
+    - Quadratic
+    - Split (Figma)
+- Color picker
+- Random color
+- Can we merge any colors as visually indistinguishable from one another?
+- Famous brand colors
+- Copy various code snippets to clipboard
+- Allow percentages and full CSS representation in the URL but default /{space}/{val}/{val}/{val} where val is a float or an int
+
+[dev]
+- Linter enforces import order
 - Copy stuff from old TODO
 - "svg" as an alias for "css" because that's where those color names originate.
 - Does palette have all CSS4 colors? Send a PR?
-
-[dev]
 - Linter
 - Formatter
 - Unit tests
