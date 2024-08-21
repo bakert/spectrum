@@ -63,3 +63,6 @@
 - pre-commit?
 - Organize imports automatically
 - cargo watch --clear -x run should be in a file somewhere not just in my command history
+- cargo fmt in Makefile or similar
+- cargo clippy in Makefile or similar
+- github actions on merge?
