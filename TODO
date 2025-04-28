@@ -66,3 +66,4 @@
 - cargo fmt in Makefile or similar
 - cargo clippy in Makefile or similar
 - github actions on merge?
+- cargo llvm-cov

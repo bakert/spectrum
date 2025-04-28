@@ -4,7 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+approx = "0.5"
 axum = "0.7"
+css-colors = "1.0" # Just for the list of CSS named colors
 cssparser = "0.33" # cssparser-color seems to blow up with 0.34, can maybe remove this as not explicitly used now?
 cssparser-color = "0.1"
 palette = "0.7"

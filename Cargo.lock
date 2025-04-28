@@ -147,6 +147,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "css-colors"
+version = "1.0.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "22c2bbfc5708f23437b074ba4e699b14fd6d7181a61695bccc8d944b78739236"
+
+[[package]]
 name = "cssparser"
 version = "0.33.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -749,7 +755,9 @@ dependencies = [
 name = "spectrum"
 version = "0.1.0"
 dependencies = [
+ "approx",
  "axum",
+ "css-colors",
  "cssparser",
  "cssparser-color",
  "palette",
